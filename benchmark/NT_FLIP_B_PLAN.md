@@ -31,3 +31,12 @@ C1_none, F1_sugar, G1_jonCE, E1_lc4 (protection tests D0 passes), O1_ornDM1, N1_
 
 ## Limitations
 3 seeds per condition = screening, not inference. Dopamine/serotonin/octopamine are treated as excitatory in the model, so flipping them tests a model assumption, not biology. Execution: Kaggle (private, internet off) or local, same code.
+
+Registered publicly: GitHub commit c536f84, 2026-09-28 11:14:14 UTC (18:14 Bangkok), files verified identical to local copies.
+
+## Result (scored 2026-09-28 20:30, Kaggle runs complete: 1,476/1,476 simulations)
+- Validity: D0 panel as expected (C1, F1, G1, E1 pass; O1, N1 fail) -> screen valid. Negative control CB0008: no change in O1/N1 (as expected).
+- **O1: rescued by 0/80 types. N1: rescued by 0/80 types. -> Null result (no candidate).** No flip broke a protection test.
+- Closest for O1: lLN1_bc (local interneuron) raised the DM1-PN / other-PN ratio from 2.0 to 2.8 (criterion 3.0); other PNs stay at 131-224 Hz in every flip -> spread of olfactory activity is not caused by one mis-signed type among those screened.
+- N1: persistent activity 0.0 Hz in every flip (as predicted in advance).
+- Limitation: 80 of 781 flagged types screened (cap in the registered rule); 3 seeds; no confirmation stage needed.
