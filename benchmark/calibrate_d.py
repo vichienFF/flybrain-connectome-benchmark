@@ -15,19 +15,31 @@ VARIANTS = {"D0": {}, "D1": dict(std=dict(U=0.5, tau_rec=300.0)), "D2": dict(sfa
             # รอบยืนยัน (D_PLAN.md ส่วน "รอบ 2"): ค่าใกล้เคียงของ D2 + D4 = D2 + STD เฉพาะ ORN
             "D2a": dict(sfa=dict(dth=1.5, tau_th=100.0)), "D2b": dict(sfa=dict(dth=2.5, tau_th=100.0)),
             "D2c": dict(sfa=dict(dth=2.0, tau_th=150.0)),
-            "D4": dict(std=dict(U=0.5, tau_rec=300.0, mask="ORN"), sfa=dict(dth=2.0, tau_th=100.0))}
+            "D4": dict(std=dict(U=0.5, tau_rec=300.0, mask="ORN"), sfa=dict(dth=2.0, tau_th=100.0)),
+            # รอบ 5 (D_PLAN.md): D2 + Usnea (CB0008) เป็นกระตุ้น
+            "D2U": dict(sfa=dict(dth=2.0, tau_th=100.0))}
+USNEA_FLIP = {"D2U"}
 ANN = {}
+
+
+def _ct(ids):
+    if "ct" not in ANN:
+        import pandas as pd
+        a = pd.read_csv(os.path.join(ROOT, "flywire", "neuron_annotations.tsv"), sep="	", low_memory=False)
+        ANN["ct"] = a.drop_duplicates("root_id").set_index("root_id").cell_type.reindex(ids)
+    return ANN["ct"].fillna("").astype(str)
 
 
 def make(W, ids, variant, k):
     p = dict(P); p["w_syn"] = P["w_syn"] * k; p["f_poi"] = P["f_poi"] / k
+    if variant in USNEA_FLIP:  # กลับเครื่องหมาย output ของ Usnea เป็นบวก (เหมือน D0U ใน benchmark.py)
+        Wc = W.tocsc(copy=True)
+        for j in np.flatnonzero(_ct(ids).values == "CB0008"):
+            Wc.data[Wc.indptr[j]:Wc.indptr[j + 1]] = np.abs(Wc.data[Wc.indptr[j]:Wc.indptr[j + 1]])
+        W = Wc.tocsr()
     kw = {key: dict(val) for key, val in VARIANTS[variant].items()}
     if kw.get("std", {}).get("mask") == "ORN":  # เซลล์ดมกลิ่น (cell_type ขึ้นต้น ORN_) เท่านั้น
-        if "ct" not in ANN:
-            import pandas as pd
-            a = pd.read_csv(os.path.join(ROOT, "flywire", "neuron_annotations.tsv"), sep="	", low_memory=False)
-            ANN["ct"] = a.drop_duplicates("root_id").set_index("root_id").cell_type.reindex(ids)
-        kw["std"]["mask"] = ANN["ct"].fillna("").astype(str).str.startswith("ORN_").to_numpy(bool)
+        kw["std"]["mask"] = _ct(ids).str.startswith("ORN_").to_numpy(bool)
     return BrainD(W, ids, p=p, **kw)
 
 
