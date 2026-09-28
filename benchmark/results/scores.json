@@ -1,0 +1,138 @@
+[
+ {
+  "test": "C1",
+  "system": "ควบคุม",
+  "value": 0,
+  "criterion": "0 เซลล์ยิง",
+  "passed": true,
+  "note": ""
+ },
+ {
+  "test": "F1",
+  "system": "การกิน",
+  "value": 96.8,
+  "criterion": "MN9 ≥ 20 Hz",
+  "passed": true,
+  "note": ""
+ },
+ {
+  "test": "F2",
+  "system": "การกิน",
+  "value": 10.4,
+  "criterion": "MN9 ≥ 20 Hz",
+  "passed": false,
+  "note": ""
+ },
+ {
+  "test": "F3",
+  "system": "การกิน",
+  "value": 0.0,
+  "criterion": "MN9 < 5 Hz",
+  "passed": true,
+  "note": ""
+ },
+ {
+  "test": "F4",
+  "system": "การกิน",
+  "value": "1.4 (-99%)",
+  "criterion": "ลด ≥ 30% จาก F1",
+  "passed": true,
+  "note": ""
+ },
+ {
+  "test": "F5",
+  "system": "การกิน",
+  "value": "8.8 (-91%)",
+  "criterion": "ทิศทาง: lower",
+  "passed": true,
+  "note": ""
+ },
+ {
+  "test": "F6",
+  "system": "การกิน",
+  "value": "ρ=1.00 · [0, 15, 69, 97, 115]",
+  "criterion": "Spearman ρ ≥ 0.9",
+  "passed": true,
+  "note": ""
+ },
+ {
+  "test": "F7",
+  "system": "การกิน",
+  "value": "100.0 (+3%)",
+  "criterion": "ลด ≥ 20% จาก F1",
+  "passed": false,
+  "note": ""
+ },
+ {
+  "test": "F8",
+  "system": "การกิน",
+  "value": "106.2 (+10%)",
+  "criterion": "ลด ≥ 20% จาก F1",
+  "passed": false,
+  "note": ""
+ },
+ {
+  "test": "F9",
+  "system": "การกิน",
+  "value": 74.4,
+  "criterion": "MN9 ≥ 20 Hz",
+  "passed": true,
+  "note": ""
+ },
+ {
+  "test": "F10*",
+  "system": "การกิน (post-hoc)",
+  "value": "19.8 (-80%)",
+  "criterion": "ลด < 20% (แมลงจริงไม่ลด)",
+  "passed": false,
+  "note": ""
+ },
+ {
+  "test": "G1",
+  "system": "ทำความสะอาด",
+  "value": 52.6,
+  "criterion": "aBN1 ≥ 20 Hz",
+  "passed": true,
+  "note": ""
+ },
+ {
+  "test": "G2",
+  "system": "ทำความสะอาด",
+  "value": 0.4,
+  "criterion": "aBN1 ต่ำกว่า G1",
+  "passed": true,
+  "note": ""
+ },
+ {
+  "test": "E1",
+  "system": "หนีภัย",
+  "value": 101.8,
+  "criterion": "Giant Fiber ≥ 20 Hz",
+  "passed": true,
+  "note": ""
+ },
+ {
+  "test": "E2",
+  "system": "หนีภัย",
+  "value": 253.6,
+  "criterion": "Giant Fiber ≥ 20 Hz",
+  "passed": true,
+  "note": ""
+ },
+ {
+  "test": "O1",
+  "system": "กลิ่น",
+  "value": "DM1 PN 399 Hz vs uPN อื่น 197.1 Hz",
+  "criterion": "≥ 20 Hz และ ≥ 3×",
+  "passed": false,
+  "note": ""
+ },
+ {
+  "test": "N1",
+  "system": "นำทาง",
+  "value": "0.0 Hz หลังหยุดกระตุ้น",
+  "criterion": "bump คงอยู่ ≥ 5 Hz (คาดว่าตก)",
+  "passed": false,
+  "note": ""
+ }
+]
