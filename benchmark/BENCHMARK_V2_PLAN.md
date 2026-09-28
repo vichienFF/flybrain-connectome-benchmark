@@ -58,3 +58,25 @@ replication, not new evidence. The new information is the comparison between mod
 ## Disclosure (added before registration)
 One smoke-test simulation was run to check the code after the criteria above were written: panel C, D0, seed 0 ->
 aBN1 26, aDN1 5, DN2 5 spikes/s. Criteria were not changed. No other panel-A/B/C simulation was run before registration.
+
+Registered publicly: GitHub commit 6bb27a1, 2026-09-28 14:36:42 UTC (21:36 Bangkok); 12 files verified identical to local copies.
+
+## Amendment 1 (2026-09-28 ~22:05) - code bug fix, criteria unchanged
+First Kaggle run (21:40) stopped after 97/620 simulations per model: Table-3 names differ in letter case from the ID list
+(e.g. "asteroid" vs "Asteroid") -> KeyError. Fix: case/hyphen-insensitive name lookup (`sez_key`). All 124 conditions were
+then checked to resolve to non-empty neuron groups. No criteria, conditions or labels changed. Partial outputs of the
+failed run were not scored or inspected; the whole panel is re-run from scratch (same seeds).
+
+## Result (scored 2026-09-29 05:05; Kaggle re-run complete, 620/620 simulations per model; scores in results/bm2_scores.json)
+| | D0 | D0U | D2 |
+|---|---|---|---|
+| A balanced accuracy (>0 Hz rule) | 0.879 (sens 0.769, spec 0.989) | 0.879 | 0.874 (spec 0.978) |
+| A balanced accuracy (>=5 Hz, secondary) | 0.764 | 0.764 | 0.802 |
+| B pass (all 17) | 11/17 | 11/17 | 5/17 (water baseline 1.6 Hz -> 9 water tests not evaluable) |
+| B pass without the 2 Usnea tests | 11/15 | 9/15 | 5/15 |
+| C pass | 3/3 | 3/3 | 3/3 |
+- Criterion 1 (replication, D0 BA >= 0.75): **met** (0.879). A false negatives in all models: marge, phantom, tentacular (real PER 0.1-0.6); false positive: kitty (+vice in D2).
+- Criterion 2 (D0U cost on A <= 0.05): **met** (identical).
+- Criterion 3 (D0U passes more B tests than D0): **not met** (11 vs 11). D0U gains both Usnea tests but loses sugar:Rattle (-4.5% vs -55.9%) and water:G2N-1 (-27% vs -17%, real: not required). Caveat: water baseline differs strongly (D0 8.3 Hz, D0U 56.4 Hz), i.e. operating points are not matched in panel B.
+- Failures shared by all models: sugar:Roundup (model -80 to -93%, real: not required = known bottleneck), sugar:FMIn (model +21 to +32%, real: required), water:Rattle and water:Bract (real: required, model < 20% decrease).
+- D2: exploratory; water drive too weak to evaluate panel B-water.

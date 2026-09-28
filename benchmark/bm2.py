@@ -17,7 +17,7 @@ VARIANT = bm.VARIANT
 SEEDS = range(5)
 T_MS = 1000.0
 SEZ = json.load(open(os.path.join(ROOT, "literature", "shiu2024_supp", "sez_neurons_783.json")))
-LOW = {k.lower(): k for k in SEZ}
+LOW = {k.lower().replace("-", "_"): k for k in SEZ}
 A_EXCLUDE = {"psg1", "usnea"}
 A_LABELS_FN = os.path.join(ROOT, "literature", "shiu2024_supp", "csv", "Sup_Table_3_Predicted_MN9_vs._o.csv")
 B_SUGAR = {"clavicle": True, "FMIn": True, "G2N_1": True, "rattle": True, "usnea": True,
@@ -33,16 +33,20 @@ def a_labels():
     return {r[0]: float(r[1]) > 0 for r in R if r[0].lower() not in A_EXCLUDE}
 
 
+def sez_key(name):  # Table 3 names differ in case/hyphen from the ID list (bug fix 2026-09-28, see plan amendment)
+    return LOW[name.lower().replace("-", "_")]
+
+
 def conditions():
     C = {}
     for t in a_labels():
-        C[f"A|{t}"] = ([(f"sez:{t}", 50.0)], [])
+        C[f"A|{t}"] = ([(f"sez:{sez_key(t)}", 50.0)], [])
     C["B|sugar50|none"] = ([("sugar", 50.0)], [])
     for n in B_SUGAR:
-        C[f"B|sugar50|{n}"] = ([("sugar", 50.0)], [f"sez:{n}"])
+        C[f"B|sugar50|{n}"] = ([("sugar", 50.0)], [f"sez:{sez_key(n)}"])
     C["B|water160|none"] = ([("water", 160.0)], [])
     for n in B_WATER:
-        C[f"B|water160|{n}"] = ([("water", 160.0)], [f"sez:{n}"])
+        C[f"B|water160|{n}"] = ([("water", 160.0)], [f"sez:{sez_key(n)}"])
     C["C|jon150"] = ([("jon_all", 150.0)], [])
     return C
 

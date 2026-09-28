@@ -1,0 +1,398 @@
+{
+ "D0": {
+  "A_primary": {
+   "sensitivity": 0.769,
+   "specificity": 0.989,
+   "balanced_accuracy": 0.879,
+   "false_neg": [
+    "marge",
+    "phantom",
+    "tentacular"
+   ],
+   "false_pos": [
+    "kitty"
+   ]
+  },
+  "A_secondary_5Hz": {
+   "sensitivity": 0.538,
+   "specificity": 0.989,
+   "balanced_accuracy": 0.764,
+   "false_neg": [
+    "rattle",
+    "FMIn",
+    "TH_VUM",
+    "marge",
+    "phantom",
+    "tentacular"
+   ],
+   "false_pos": [
+    "kitty"
+   ]
+  },
+  "B": {
+   "sugar50:clavicle": {
+    "real_required": true,
+    "change_pct": -22.1,
+    "pass_": true
+   },
+   "sugar50:FMIn": {
+    "real_required": true,
+    "change_pct": 32.4,
+    "pass_": false
+   },
+   "sugar50:G2N_1": {
+    "real_required": true,
+    "change_pct": -34.6,
+    "pass_": true
+   },
+   "sugar50:rattle": {
+    "real_required": true,
+    "change_pct": -55.9,
+    "pass_": true
+   },
+   "sugar50:usnea": {
+    "real_required": true,
+    "change_pct": 11.0,
+    "pass_": false
+   },
+   "sugar50:bract": {
+    "real_required": false,
+    "change_pct": 0.0,
+    "pass_": true
+   },
+   "sugar50:phantom": {
+    "real_required": false,
+    "change_pct": -2.2,
+    "pass_": true
+   },
+   "sugar50:roundup": {
+    "real_required": false,
+    "change_pct": -93.4,
+    "pass_": false
+   },
+   "water160:bract": {
+    "real_required": true,
+    "change_pct": -15.7,
+    "pass_": false
+   },
+   "water160:clavicle": {
+    "real_required": true,
+    "change_pct": -89.2,
+    "pass_": true
+   },
+   "water160:rattle": {
+    "real_required": true,
+    "change_pct": -6.0,
+    "pass_": false
+   },
+   "water160:roundup": {
+    "real_required": true,
+    "change_pct": -98.8,
+    "pass_": true
+   },
+   "water160:usnea": {
+    "real_required": true,
+    "change_pct": 297.6,
+    "pass_": false
+   },
+   "water160:G2N_1": {
+    "real_required": false,
+    "change_pct": -16.9,
+    "pass_": true
+   },
+   "water160:phantom": {
+    "real_required": false,
+    "change_pct": 203.6,
+    "pass_": true
+   },
+   "water160:tophat": {
+    "real_required": false,
+    "change_pct": 13.3,
+    "pass_": true
+   },
+   "water160:tulip": {
+    "real_required": false,
+    "change_pct": 489.2,
+    "pass_": true
+   }
+  },
+  "B_pass": "11/17",
+  "B_pass_without_usnea": "11/15",
+  "C": {
+   "aBN1": {
+    "hz": 32.6,
+    "pass_": true
+   },
+   "aDN1": {
+    "hz": 9.6,
+    "pass_": true
+   },
+   "DN2": {
+    "hz": 9.8,
+    "pass_": true
+   }
+  },
+  "C_pass": "3/3"
+ },
+ "D0U": {
+  "A_primary": {
+   "sensitivity": 0.769,
+   "specificity": 0.989,
+   "balanced_accuracy": 0.879,
+   "false_neg": [
+    "marge",
+    "phantom",
+    "tentacular"
+   ],
+   "false_pos": [
+    "kitty"
+   ]
+  },
+  "A_secondary_5Hz": {
+   "sensitivity": 0.538,
+   "specificity": 0.989,
+   "balanced_accuracy": 0.764,
+   "false_neg": [
+    "rattle",
+    "FMIn",
+    "TH_VUM",
+    "marge",
+    "phantom",
+    "tentacular"
+   ],
+   "false_pos": [
+    "kitty"
+   ]
+  },
+  "B": {
+   "sugar50:clavicle": {
+    "real_required": true,
+    "change_pct": -48.2,
+    "pass_": true
+   },
+   "sugar50:FMIn": {
+    "real_required": true,
+    "change_pct": 30.5,
+    "pass_": false
+   },
+   "sugar50:G2N_1": {
+    "real_required": true,
+    "change_pct": -33.2,
+    "pass_": true
+   },
+   "sugar50:rattle": {
+    "real_required": true,
+    "change_pct": -4.5,
+    "pass_": false
+   },
+   "sugar50:usnea": {
+    "real_required": true,
+    "change_pct": -31.4,
+    "pass_": true
+   },
+   "sugar50:bract": {
+    "real_required": false,
+    "change_pct": 16.4,
+    "pass_": true
+   },
+   "sugar50:phantom": {
+    "real_required": false,
+    "change_pct": 13.2,
+    "pass_": true
+   },
+   "sugar50:roundup": {
+    "real_required": false,
+    "change_pct": -80.0,
+    "pass_": false
+   },
+   "water160:bract": {
+    "real_required": true,
+    "change_pct": -8.2,
+    "pass_": false
+   },
+   "water160:clavicle": {
+    "real_required": true,
+    "change_pct": -87.4,
+    "pass_": true
+   },
+   "water160:rattle": {
+    "real_required": true,
+    "change_pct": 0.5,
+    "pass_": false
+   },
+   "water160:roundup": {
+    "real_required": true,
+    "change_pct": -87.6,
+    "pass_": true
+   },
+   "water160:usnea": {
+    "real_required": true,
+    "change_pct": -41.5,
+    "pass_": true
+   },
+   "water160:G2N_1": {
+    "real_required": false,
+    "change_pct": -27.0,
+    "pass_": false
+   },
+   "water160:phantom": {
+    "real_required": false,
+    "change_pct": 6.4,
+    "pass_": true
+   },
+   "water160:tophat": {
+    "real_required": false,
+    "change_pct": -4.1,
+    "pass_": true
+   },
+   "water160:tulip": {
+    "real_required": false,
+    "change_pct": 30.9,
+    "pass_": true
+   }
+  },
+  "B_pass": "11/17",
+  "B_pass_without_usnea": "9/15",
+  "C": {
+   "aBN1": {
+    "hz": 32.6,
+    "pass_": true
+   },
+   "aDN1": {
+    "hz": 9.6,
+    "pass_": true
+   },
+   "DN2": {
+    "hz": 9.8,
+    "pass_": true
+   }
+  },
+  "C_pass": "3/3"
+ },
+ "D2": {
+  "A_primary": {
+   "sensitivity": 0.769,
+   "specificity": 0.978,
+   "balanced_accuracy": 0.874,
+   "false_neg": [
+    "marge",
+    "phantom",
+    "tentacular"
+   ],
+   "false_pos": [
+    "vice",
+    "kitty"
+   ]
+  },
+  "A_secondary_5Hz": {
+   "sensitivity": 0.615,
+   "specificity": 0.989,
+   "balanced_accuracy": 0.802,
+   "false_neg": [
+    "FMIn",
+    "TH_VUM",
+    "marge",
+    "phantom",
+    "tentacular"
+   ],
+   "false_pos": [
+    "kitty"
+   ]
+  },
+  "B": {
+   "sugar50:clavicle": {
+    "real_required": true,
+    "change_pct": -23.9,
+    "pass_": true
+   },
+   "sugar50:FMIn": {
+    "real_required": true,
+    "change_pct": 21.1,
+    "pass_": false
+   },
+   "sugar50:G2N_1": {
+    "real_required": true,
+    "change_pct": -38.5,
+    "pass_": true
+   },
+   "sugar50:rattle": {
+    "real_required": true,
+    "change_pct": -41.3,
+    "pass_": true
+   },
+   "sugar50:usnea": {
+    "real_required": true,
+    "change_pct": 0.0,
+    "pass_": false
+   },
+   "sugar50:bract": {
+    "real_required": false,
+    "change_pct": -18.3,
+    "pass_": true
+   },
+   "sugar50:phantom": {
+    "real_required": false,
+    "change_pct": 10.1,
+    "pass_": true
+   },
+   "sugar50:roundup": {
+    "real_required": false,
+    "change_pct": -81.7,
+    "pass_": false
+   },
+   "water160:bract": {
+    "pass_": null,
+    "note": "baseline < 5 Hz"
+   },
+   "water160:clavicle": {
+    "pass_": null,
+    "note": "baseline < 5 Hz"
+   },
+   "water160:rattle": {
+    "pass_": null,
+    "note": "baseline < 5 Hz"
+   },
+   "water160:roundup": {
+    "pass_": null,
+    "note": "baseline < 5 Hz"
+   },
+   "water160:usnea": {
+    "pass_": null,
+    "note": "baseline < 5 Hz"
+   },
+   "water160:G2N_1": {
+    "pass_": null,
+    "note": "baseline < 5 Hz"
+   },
+   "water160:phantom": {
+    "pass_": null,
+    "note": "baseline < 5 Hz"
+   },
+   "water160:tophat": {
+    "pass_": null,
+    "note": "baseline < 5 Hz"
+   },
+   "water160:tulip": {
+    "pass_": null,
+    "note": "baseline < 5 Hz"
+   }
+  },
+  "B_pass": "5/17",
+  "B_pass_without_usnea": "5/15",
+  "C": {
+   "aBN1": {
+    "hz": 42.2,
+    "pass_": true
+   },
+   "aDN1": {
+    "hz": 10.0,
+    "pass_": true
+   },
+   "DN2": {
+    "hz": 10.6,
+    "pass_": true
+   }
+  },
+  "C_pass": "3/3"
+ }
+}
