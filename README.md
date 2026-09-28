@@ -1,7 +1,7 @@
 # flybrain-connectome-benchmark
 
 Code, pre-registrations and results for the preprint:
-**"Benchmarking a whole-brain connectome model of *Drosophila* against experimental data: diagnosing knockout-prediction failures and a candidate excitatory role for the water-taste neuron Usnea"** — Vichien Fugsukjit (Independent Researcher, Bangkok; ORCID 0009-0005-2468-6670). Preprint link: *to be added*.
+**"Benchmarking a whole-brain connectome model of *Drosophila* against experimental data: diagnosing knockout-prediction failures and a candidate excitatory role for the water-taste neuron Usnea"** — Vichien Fugsukjit (Independent Researcher, Bangkok; ORCID 0009-0005-2468-6670). Preprint (Zenodo): https://doi.org/10.5281/zenodo.23025560.
 ## Contents
 | Folder | What |
 |---|---|
