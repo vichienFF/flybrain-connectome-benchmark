@@ -27,3 +27,17 @@ test of the Usnea hypothesis in this project; the next step is the wet-lab test.
 ## Disclosure
 The v3 selection curves were seen before choosing this grid (they motivated the finer spacing). No simulation with seeds
 60-67 or 70-79 was run before registration.
+
+Registered publicly: GitHub commit 99a0ae4, 2026-09-29 02:24:49 UTC (09:24 Bangkok); files verified identical.
+
+## Result (scored 2026-09-29 10:35; Kaggle complete, 342/342 simulations per model; results/bm4_scores.json)
+- Chosen rates: D0 sugar 50, water 180 Hz; D0U sugar 46, water 92 Hz.
+- Test-seed baselines (valid range 10.5-19.5 Hz): D0 sugar 11.5, water **21.4**; D0U sugar 14.2, water 17.1.
+  **Validity criterion not met** (D0 water 21.4 Hz, just above the range). Per the registered rule, the model-based
+  evidence on the Usnea hypothesis is called **INCONCLUSIVE** and no further refinement is run.
+- Pass counts: D0 11/17 (11/15 without Usnea tests); D0U 11/17 (9/15). Rule outcome would be WEAKENED.
+- Consistent across v2, v3 and v4: D0U passes both Usnea tests and gains sugar:Clavicle, but loses water:Bract
+  (-7% vs -40%) and water:Rattle (-15% vs -40%), which are required in flies. sugar:Rattle, lost here at -19.4%
+  (threshold 20%), was passed in v3; it is borderline.
+- Conclusion for the project: model evidence neither confirms nor refutes an excitatory Usnea; a consistent cost in
+  the water pathway (Bract, Rattle) must be reported alongside the Usnea gains. The decisive test is immunostaining.
