@@ -39,3 +39,16 @@ Execution: Kaggle (private, internet off), same code as in this commit.
 ## Disclosure (added before registration)
 One code smoke test was run with an unused seed (999; water 100 Hz, Usnea silenced) only to check that the script runs;
 its output was not used for any choice. No simulation with seeds 40-44 or 50-59 was run before registration.
+
+Registered publicly: GitHub commit bca37c0, 2026-09-29 01:08:43 UTC (08:08 Bangkok); files verified identical.
+
+## Result (scored 2026-09-29 09:10; Kaggle complete, 275/275 simulations per model; results/bm3_scores.json)
+- Chosen rates: D0 sugar 55 Hz, water 160 Hz; D0U sugar 50 Hz, water 80 Hz.
+- Test-seed baselines (target 15 Hz, valid range 10.5-19.5): D0 sugar 21.2, water 12.9; D0U sugar 22.8, water 8.8.
+  **Validity criterion not met** (3 of 4 baselines outside the range; the grid was too coarse where MN9 rises steeply:
+  D0 sugar 50 -> 55 Hz gave 9.0 -> 20.7 Hz; D0U water 80 -> 100 Hz gave 9.0 -> 30.5 Hz). Verdict therefore **provisional**.
+- Pass counts: D0 11/17 (11/15 without Usnea tests); D0U 12/17 (10/15).
+- **Verdict (registered rule): WEAKENED (provisional).** D0U passed both Usnea tests (sugar -28%, water -96%) and gained
+  sugar:Clavicle, but lost two water tests that D0 passes: Bract (-10% vs -44%) and Rattle (-4% vs -45%); both are
+  required in flies. The Rattle-under-sugar loss seen in v2 disappeared at closer operating points (as expected).
+- Caveat: D0U's water baseline (8.8 Hz) was lower than D0's (12.9 Hz); the two lost tests are in the water condition.

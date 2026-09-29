@@ -1,0 +1,246 @@
+{
+ "D0": {
+  "chosen_hz": {
+   "sugar": 55,
+   "water": 160
+  },
+  "tests": {
+   "sugar:clavicle": {
+    "real_required": true,
+    "change_pct": -5.9,
+    "p": 0.3516,
+    "pass_": false
+   },
+   "sugar:FMIn": {
+    "real_required": true,
+    "change_pct": 37.4,
+    "p": 0.0059,
+    "pass_": false
+   },
+   "sugar:G2N_1": {
+    "real_required": true,
+    "change_pct": -23.1,
+    "p": 0.0176,
+    "pass_": true
+   },
+   "sugar:rattle": {
+    "real_required": true,
+    "change_pct": -35.5,
+    "p": 0.0078,
+    "pass_": true
+   },
+   "sugar:usnea": {
+    "real_required": true,
+    "change_pct": 31.8,
+    "p": 0.0137,
+    "pass_": false
+   },
+   "sugar:bract": {
+    "real_required": false,
+    "change_pct": -11.5,
+    "p": 0.0156,
+    "pass_": true
+   },
+   "sugar:phantom": {
+    "real_required": false,
+    "change_pct": 12.5,
+    "p": 0.0762,
+    "pass_": true
+   },
+   "sugar:roundup": {
+    "real_required": false,
+    "change_pct": -88.0,
+    "p": 0.002,
+    "pass_": false
+   },
+   "water:bract": {
+    "real_required": true,
+    "change_pct": -43.8,
+    "p": 0.002,
+    "pass_": true
+   },
+   "water:clavicle": {
+    "real_required": true,
+    "change_pct": -94.2,
+    "p": 0.002,
+    "pass_": true
+   },
+   "water:rattle": {
+    "real_required": true,
+    "change_pct": -44.6,
+    "p": 0.0039,
+    "pass_": true
+   },
+   "water:roundup": {
+    "real_required": true,
+    "change_pct": -99.6,
+    "p": 0.002,
+    "pass_": true
+   },
+   "water:usnea": {
+    "real_required": true,
+    "change_pct": 166.7,
+    "p": 0.002,
+    "pass_": false
+   },
+   "water:G2N_1": {
+    "real_required": false,
+    "change_pct": -41.5,
+    "p": 0.0039,
+    "pass_": false
+   },
+   "water:phantom": {
+    "real_required": false,
+    "change_pct": 119.4,
+    "p": 0.002,
+    "pass_": true
+   },
+   "water:tophat": {
+    "real_required": false,
+    "change_pct": -11.2,
+    "p": 0.3008,
+    "pass_": true
+   },
+   "water:tulip": {
+    "real_required": false,
+    "change_pct": 300.8,
+    "p": 0.002,
+    "pass_": true
+   }
+  },
+  "baseline_sugar": 21.2,
+  "matched_sugar": false,
+  "baseline_water": 12.9,
+  "matched_water": true,
+  "pass_all": 11,
+  "pass_non_usnea": 11
+ },
+ "D0U": {
+  "chosen_hz": {
+   "sugar": 50,
+   "water": 80
+  },
+  "tests": {
+   "sugar:clavicle": {
+    "real_required": true,
+    "change_pct": -39.3,
+    "p": 0.002,
+    "pass_": true
+   },
+   "sugar:FMIn": {
+    "real_required": true,
+    "change_pct": 20.0,
+    "p": 0.0391,
+    "pass_": false
+   },
+   "sugar:G2N_1": {
+    "real_required": true,
+    "change_pct": -34.5,
+    "p": 0.002,
+    "pass_": true
+   },
+   "sugar:rattle": {
+    "real_required": true,
+    "change_pct": -32.7,
+    "p": 0.0078,
+    "pass_": true
+   },
+   "sugar:usnea": {
+    "real_required": true,
+    "change_pct": -27.7,
+    "p": 0.0098,
+    "pass_": true
+   },
+   "sugar:bract": {
+    "real_required": false,
+    "change_pct": -7.7,
+    "p": 0.4531,
+    "pass_": true
+   },
+   "sugar:phantom": {
+    "real_required": false,
+    "change_pct": 9.7,
+    "p": 0.1504,
+    "pass_": true
+   },
+   "sugar:roundup": {
+    "real_required": false,
+    "change_pct": -82.0,
+    "p": 0.002,
+    "pass_": false
+   },
+   "water:bract": {
+    "real_required": true,
+    "change_pct": -10.2,
+    "p": 0.125,
+    "pass_": false
+   },
+   "water:clavicle": {
+    "real_required": true,
+    "change_pct": -100.0,
+    "p": 0.002,
+    "pass_": true
+   },
+   "water:rattle": {
+    "real_required": true,
+    "change_pct": -4.0,
+    "p": 0.7422,
+    "pass_": false
+   },
+   "water:roundup": {
+    "real_required": true,
+    "change_pct": -99.4,
+    "p": 0.002,
+    "pass_": true
+   },
+   "water:usnea": {
+    "real_required": true,
+    "change_pct": -95.5,
+    "p": 0.002,
+    "pass_": true
+   },
+   "water:G2N_1": {
+    "real_required": false,
+    "change_pct": -25.0,
+    "p": 0.0625,
+    "pass_": false
+   },
+   "water:phantom": {
+    "real_required": false,
+    "change_pct": 161.4,
+    "p": 0.002,
+    "pass_": true
+   },
+   "water:tophat": {
+    "real_required": false,
+    "change_pct": -8.0,
+    "p": 0.2266,
+    "pass_": true
+   },
+   "water:tulip": {
+    "real_required": false,
+    "change_pct": 7.4,
+    "p": 0.8672,
+    "pass_": true
+   }
+  },
+  "baseline_sugar": 22.8,
+  "matched_sugar": false,
+  "baseline_water": 8.8,
+  "matched_water": false,
+  "pass_all": 12,
+  "pass_non_usnea": 10
+ },
+ "verdict": {
+  "D0U_lost_non_usnea": [
+   "water:bract",
+   "water:rattle"
+  ],
+  "D0U_gained_non_usnea": [
+   "sugar:clavicle"
+  ],
+  "D0U_passes_both_usnea": true,
+  "valid": false,
+  "outcome": "WEAKENED"
+ }
+}
