@@ -35,3 +35,18 @@ divided by the maximum. Gain 0 reproduces D0 bit-for-bit (verified with an unuse
 Targets, time constant and the form of the drive are assumptions (receptor locations of any Usnea peptide are unknown).
 A positive result means a slow excitatory co-transmitter is sufficient in principle, not that Usnea uses a specific
 peptide. Execution: Kaggle (private, internet off), same code as this commit.
+
+Registered publicly: GitHub commit a91bc2e, 2026-10-05 05:17:19 UTC (12:17 Bangkok); 4 files verified identical. (Commit message was typed differently from the suggested text; content is what counts.)
+
+## Result (scored 2026-10-05 14:15; Kaggle complete; results/pep_scores.json, scores_D0P.json)
+1. Calibration: gain 0.0005 -> F2 16.6 Hz, 0.001 -> 17.0, **0.002 -> 23.0 (chosen)**.
+2. 16-test benchmark (seeds 0-4): F2 water->MN9 = **16.8 Hz (fails on the test seeds; calibration was marginal)**;
+   no test passed by D0 was lost (10/16 + F2 failing = same as D0 on these criteria). "No cost" criterion: met.
+3. Panel B, matched operating point (D0P baselines sugar 10.8, water 17.5 Hz: valid; D0 v4 water 21.4 Hz: not valid ->
+   verdict provisional). D0P 10/17 (10/15 without Usnea tests) vs D0 11/17 (11/15).
+   **Registered verdict: WEAKENED (provisional)** - lost sugar:G2N-1 (-8.8% vs -34%), and **both Usnea tests still fail**
+   (silencing Usnea increases MN9: sugar +44%, water +91%), because the unchanged GABA output still dominates.
+   **Key prediction met:** water:Bract (-29%) and water:Rattle (-37%) pass, unlike D0U in every round.
+- Interpretation: at the smallest gain that (marginally) rescued F2, a slow excitatory co-transmitter avoids the
+  water-pathway side effects of full re-signing, but is too weak relative to Usnea's GABA output to reproduce the Usnea
+  silencing phenotype. The rule as registered is not sufficient. No further gain tuning is run under this plan.

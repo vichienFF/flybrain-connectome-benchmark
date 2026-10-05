@@ -1,0 +1,213 @@
+{
+ "D0": {
+  "chosen_hz": {
+   "sugar": 50,
+   "water": 180
+  },
+  "tests": {
+   "sugar:clavicle": {
+    "real_required": true,
+    "change_pct": 3.0,
+    "pass_": false
+   },
+   "sugar:FMIn": {
+    "real_required": true,
+    "change_pct": 21.3,
+    "pass_": false
+   },
+   "sugar:G2N_1": {
+    "real_required": true,
+    "change_pct": -34.3,
+    "pass_": true
+   },
+   "sugar:rattle": {
+    "real_required": true,
+    "change_pct": -38.3,
+    "pass_": true
+   },
+   "sugar:usnea": {
+    "real_required": true,
+    "change_pct": 35.7,
+    "pass_": false
+   },
+   "sugar:bract": {
+    "real_required": false,
+    "change_pct": -1.7,
+    "pass_": true
+   },
+   "sugar:phantom": {
+    "real_required": false,
+    "change_pct": 0.0,
+    "pass_": true
+   },
+   "sugar:roundup": {
+    "real_required": false,
+    "change_pct": -89.1,
+    "pass_": false
+   },
+   "water:bract": {
+    "real_required": true,
+    "change_pct": -40.2,
+    "pass_": true
+   },
+   "water:clavicle": {
+    "real_required": true,
+    "change_pct": -91.6,
+    "pass_": true
+   },
+   "water:rattle": {
+    "real_required": true,
+    "change_pct": -39.5,
+    "pass_": true
+   },
+   "water:roundup": {
+    "real_required": true,
+    "change_pct": -97.7,
+    "pass_": true
+   },
+   "water:usnea": {
+    "real_required": true,
+    "change_pct": 97.7,
+    "pass_": false
+   },
+   "water:G2N_1": {
+    "real_required": false,
+    "change_pct": -35.7,
+    "pass_": false
+   },
+   "water:phantom": {
+    "real_required": false,
+    "change_pct": 58.6,
+    "pass_": true
+   },
+   "water:tophat": {
+    "real_required": false,
+    "change_pct": -10.3,
+    "pass_": true
+   },
+   "water:tulip": {
+    "real_required": false,
+    "change_pct": 172.2,
+    "pass_": true
+   }
+  },
+  "baseline_sugar": 11.5,
+  "matched_sugar": true,
+  "baseline_water": 21.4,
+  "matched_water": false,
+  "pass_all": 11,
+  "pass_non_usnea": 11
+ },
+ "D0P": {
+  "chosen_hz": {
+   "sugar": 50,
+   "water": 160
+  },
+  "tests": {
+   "sugar:clavicle": {
+    "real_required": true,
+    "change_pct": 7.4,
+    "pass_": false
+   },
+   "sugar:FMIn": {
+    "real_required": true,
+    "change_pct": 44.0,
+    "pass_": false
+   },
+   "sugar:G2N_1": {
+    "real_required": true,
+    "change_pct": -8.8,
+    "pass_": false
+   },
+   "sugar:rattle": {
+    "real_required": true,
+    "change_pct": -21.3,
+    "pass_": true
+   },
+   "sugar:usnea": {
+    "real_required": true,
+    "change_pct": 44.4,
+    "pass_": false
+   },
+   "sugar:bract": {
+    "real_required": false,
+    "change_pct": 4.6,
+    "pass_": true
+   },
+   "sugar:phantom": {
+    "real_required": false,
+    "change_pct": 22.7,
+    "pass_": true
+   },
+   "sugar:roundup": {
+    "real_required": false,
+    "change_pct": -87.5,
+    "pass_": false
+   },
+   "water:bract": {
+    "real_required": true,
+    "change_pct": -29.4,
+    "pass_": true
+   },
+   "water:clavicle": {
+    "real_required": true,
+    "change_pct": -96.3,
+    "pass_": true
+   },
+   "water:rattle": {
+    "real_required": true,
+    "change_pct": -36.6,
+    "pass_": true
+   },
+   "water:roundup": {
+    "real_required": true,
+    "change_pct": -98.0,
+    "pass_": true
+   },
+   "water:usnea": {
+    "real_required": true,
+    "change_pct": 90.9,
+    "pass_": false
+   },
+   "water:G2N_1": {
+    "real_required": false,
+    "change_pct": -21.7,
+    "pass_": false
+   },
+   "water:phantom": {
+    "real_required": false,
+    "change_pct": 73.7,
+    "pass_": true
+   },
+   "water:tophat": {
+    "real_required": false,
+    "change_pct": -6.9,
+    "pass_": true
+   },
+   "water:tulip": {
+    "real_required": false,
+    "change_pct": 195.4,
+    "pass_": true
+   }
+  },
+  "baseline_sugar": 10.8,
+  "matched_sugar": true,
+  "baseline_water": 17.5,
+  "matched_water": true,
+  "pass_all": 10,
+  "pass_non_usnea": 10
+ },
+ "verdict": {
+  "D0P_lost_non_usnea": [
+   "sugar:G2N_1"
+  ],
+  "D0P_passes_both_usnea": false,
+  "key_water_bract_rattle_pass": [
+   true,
+   true
+  ],
+  "D0P_valid": true,
+  "D0_valid": false,
+  "outcome": "WEAKENED"
+ }
+}
