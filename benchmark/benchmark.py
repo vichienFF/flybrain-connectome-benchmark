@@ -24,7 +24,12 @@ B = {}
 
 def setup():
     W, ids, ann = load_shiu_783()
-    if VARIANT in ("D0", "D0U"):
+    if VARIANT == "D0P":  # Usnea keeps GABA + slow neuropeptide-like excitatory rule (peptide.py; PEPTIDE_PLAN.md)
+        from peptide import BrainP
+        a0 = ann.drop_duplicates("root_id").set_index("root_id").reindex(ids)
+        gain = float(os.environ.get("PEP_GAIN") or json.load(open(os.path.join(HERE, "calib_D0P.json")))["gain"])
+        b = BrainP(W, ids, src=np.flatnonzero(a0.cell_type.values == "CB0008"), gain=gain, tau_ms=500.0)
+    elif VARIANT in ("D0", "D0U"):
         if VARIANT == "D0U":  # Usnea (CB0008) เป็นเซลล์กระตุ้น (NT ทาย GABA มั่นใจแค่ 49-66%) — สมมติฐานข้อ 3
             a0 = ann.drop_duplicates("root_id").set_index("root_id").reindex(ids)
             Wc = W.tocsc(copy=True)
