@@ -31,3 +31,13 @@ by construction).
 ## Limitations
 The model's water baseline at these rates (21.4 Hz) was slightly outside the v4 matching range. Efficacy is uniform
 across neurons; real efficacy varies with expression and light. 10 seeds. Execution: Kaggle (private, internet off).
+
+Registered publicly: GitHub commit a625272, 2026-10-05 14:06:30 UTC (21:06 Bangkok); files verified identical.
+
+## Result (scored 2026-10-06 09:25; Kaggle complete, 510/510 simulations; results/opto_scores.json)
+- Passed tests: eff 1.0 = 11/17, 0.9 = 11/17, **0.7 = 11/17 (primary)**, 0.5 = 9/17.
+- **Registered verdict: NO CLEAR CHANGE.** Incomplete silencing weakened every knockout effect roughly in proportion
+  (e.g., sugar:Roundup -89% -> -80% -> -63% -> -43%), but no failing test crossed into passing at 0.7; at 0.5 two
+  required tests were lost (sugar:G2N-1, sugar:Rattle). The Roundup over-dependence persists even at 50% efficacy.
+- Interpretation: incomplete silencing alone does not explain the model's silencing errors; the errors are structural
+  (bottleneck, missing neuromodulation), consistent with the preprint's conclusions.

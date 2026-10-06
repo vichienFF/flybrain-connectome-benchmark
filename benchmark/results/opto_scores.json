@@ -1,0 +1,368 @@
+{
+ "1.0": {
+  "tests": {
+   "sugar:clavicle": {
+    "real_required": true,
+    "change_pct": 3.0,
+    "pass_": false
+   },
+   "sugar:FMIn": {
+    "real_required": true,
+    "change_pct": 21.3,
+    "pass_": false
+   },
+   "sugar:G2N_1": {
+    "real_required": true,
+    "change_pct": -34.3,
+    "pass_": true
+   },
+   "sugar:rattle": {
+    "real_required": true,
+    "change_pct": -38.3,
+    "pass_": true
+   },
+   "sugar:usnea": {
+    "real_required": true,
+    "change_pct": 35.7,
+    "pass_": false
+   },
+   "sugar:bract": {
+    "real_required": false,
+    "change_pct": -1.7,
+    "pass_": true
+   },
+   "sugar:phantom": {
+    "real_required": false,
+    "change_pct": 0.0,
+    "pass_": true
+   },
+   "sugar:roundup": {
+    "real_required": false,
+    "change_pct": -89.1,
+    "pass_": false
+   },
+   "water:bract": {
+    "real_required": true,
+    "change_pct": -40.2,
+    "pass_": true
+   },
+   "water:clavicle": {
+    "real_required": true,
+    "change_pct": -91.6,
+    "pass_": true
+   },
+   "water:rattle": {
+    "real_required": true,
+    "change_pct": -39.5,
+    "pass_": true
+   },
+   "water:roundup": {
+    "real_required": true,
+    "change_pct": -97.7,
+    "pass_": true
+   },
+   "water:usnea": {
+    "real_required": true,
+    "change_pct": 97.7,
+    "pass_": false
+   },
+   "water:G2N_1": {
+    "real_required": false,
+    "change_pct": -35.7,
+    "pass_": false
+   },
+   "water:phantom": {
+    "real_required": false,
+    "change_pct": 58.6,
+    "pass_": true
+   },
+   "water:tophat": {
+    "real_required": false,
+    "change_pct": -10.3,
+    "pass_": true
+   },
+   "water:tulip": {
+    "real_required": false,
+    "change_pct": 172.2,
+    "pass_": true
+   }
+  },
+  "pass_all": 11
+ },
+ "0.9": {
+  "tests": {
+   "sugar:clavicle": {
+    "real_required": true,
+    "change_pct": 3.9,
+    "pass_": false
+   },
+   "sugar:FMIn": {
+    "real_required": true,
+    "change_pct": 33.5,
+    "pass_": false
+   },
+   "sugar:G2N_1": {
+    "real_required": true,
+    "change_pct": -33.5,
+    "pass_": true
+   },
+   "sugar:rattle": {
+    "real_required": true,
+    "change_pct": -23.0,
+    "pass_": true
+   },
+   "sugar:usnea": {
+    "real_required": true,
+    "change_pct": 42.6,
+    "pass_": false
+   },
+   "sugar:bract": {
+    "real_required": false,
+    "change_pct": -1.7,
+    "pass_": true
+   },
+   "sugar:phantom": {
+    "real_required": false,
+    "change_pct": -0.4,
+    "pass_": true
+   },
+   "sugar:roundup": {
+    "real_required": false,
+    "change_pct": -80.0,
+    "pass_": false
+   },
+   "water:bract": {
+    "real_required": true,
+    "change_pct": -37.4,
+    "pass_": true
+   },
+   "water:clavicle": {
+    "real_required": true,
+    "change_pct": -90.2,
+    "pass_": true
+   },
+   "water:rattle": {
+    "real_required": true,
+    "change_pct": -36.4,
+    "pass_": true
+   },
+   "water:roundup": {
+    "real_required": true,
+    "change_pct": -91.8,
+    "pass_": true
+   },
+   "water:usnea": {
+    "real_required": true,
+    "change_pct": 71.3,
+    "pass_": false
+   },
+   "water:G2N_1": {
+    "real_required": false,
+    "change_pct": -25.9,
+    "pass_": false
+   },
+   "water:phantom": {
+    "real_required": false,
+    "change_pct": 53.7,
+    "pass_": true
+   },
+   "water:tophat": {
+    "real_required": false,
+    "change_pct": -5.8,
+    "pass_": true
+   },
+   "water:tulip": {
+    "real_required": false,
+    "change_pct": 138.1,
+    "pass_": true
+   }
+  },
+  "pass_all": 11
+ },
+ "0.7": {
+  "tests": {
+   "sugar:clavicle": {
+    "real_required": true,
+    "change_pct": -0.9,
+    "pass_": false
+   },
+   "sugar:FMIn": {
+    "real_required": true,
+    "change_pct": 33.0,
+    "pass_": false
+   },
+   "sugar:G2N_1": {
+    "real_required": true,
+    "change_pct": -26.5,
+    "pass_": true
+   },
+   "sugar:rattle": {
+    "real_required": true,
+    "change_pct": -27.4,
+    "pass_": true
+   },
+   "sugar:usnea": {
+    "real_required": true,
+    "change_pct": 32.6,
+    "pass_": false
+   },
+   "sugar:bract": {
+    "real_required": false,
+    "change_pct": -1.3,
+    "pass_": true
+   },
+   "sugar:phantom": {
+    "real_required": false,
+    "change_pct": 5.7,
+    "pass_": true
+   },
+   "sugar:roundup": {
+    "real_required": false,
+    "change_pct": -63.0,
+    "pass_": false
+   },
+   "water:bract": {
+    "real_required": true,
+    "change_pct": -29.0,
+    "pass_": true
+   },
+   "water:clavicle": {
+    "real_required": true,
+    "change_pct": -88.3,
+    "pass_": true
+   },
+   "water:rattle": {
+    "real_required": true,
+    "change_pct": -29.0,
+    "pass_": true
+   },
+   "water:roundup": {
+    "real_required": true,
+    "change_pct": -83.4,
+    "pass_": true
+   },
+   "water:usnea": {
+    "real_required": true,
+    "change_pct": 72.7,
+    "pass_": false
+   },
+   "water:G2N_1": {
+    "real_required": false,
+    "change_pct": -26.6,
+    "pass_": false
+   },
+   "water:phantom": {
+    "real_required": false,
+    "change_pct": 49.3,
+    "pass_": true
+   },
+   "water:tophat": {
+    "real_required": false,
+    "change_pct": -4.7,
+    "pass_": true
+   },
+   "water:tulip": {
+    "real_required": false,
+    "change_pct": 122.9,
+    "pass_": true
+   }
+  },
+  "pass_all": 11
+ },
+ "0.5": {
+  "tests": {
+   "sugar:clavicle": {
+    "real_required": true,
+    "change_pct": -6.5,
+    "pass_": false
+   },
+   "sugar:FMIn": {
+    "real_required": true,
+    "change_pct": 17.4,
+    "pass_": false
+   },
+   "sugar:G2N_1": {
+    "real_required": true,
+    "change_pct": -13.0,
+    "pass_": false
+   },
+   "sugar:rattle": {
+    "real_required": true,
+    "change_pct": -15.7,
+    "pass_": false
+   },
+   "sugar:usnea": {
+    "real_required": true,
+    "change_pct": 22.2,
+    "pass_": false
+   },
+   "sugar:bract": {
+    "real_required": false,
+    "change_pct": -4.3,
+    "pass_": true
+   },
+   "sugar:phantom": {
+    "real_required": false,
+    "change_pct": 9.6,
+    "pass_": true
+   },
+   "sugar:roundup": {
+    "real_required": false,
+    "change_pct": -43.0,
+    "pass_": false
+   },
+   "water:bract": {
+    "real_required": true,
+    "change_pct": -24.1,
+    "pass_": true
+   },
+   "water:clavicle": {
+    "real_required": true,
+    "change_pct": -79.0,
+    "pass_": true
+   },
+   "water:rattle": {
+    "real_required": true,
+    "change_pct": -22.7,
+    "pass_": true
+   },
+   "water:roundup": {
+    "real_required": true,
+    "change_pct": -64.0,
+    "pass_": true
+   },
+   "water:usnea": {
+    "real_required": true,
+    "change_pct": 57.5,
+    "pass_": false
+   },
+   "water:G2N_1": {
+    "real_required": false,
+    "change_pct": -21.3,
+    "pass_": false
+   },
+   "water:phantom": {
+    "real_required": false,
+    "change_pct": 37.1,
+    "pass_": true
+   },
+   "water:tophat": {
+    "real_required": false,
+    "change_pct": -2.3,
+    "pass_": true
+   },
+   "water:tulip": {
+    "real_required": false,
+    "change_pct": 74.1,
+    "pass_": true
+   }
+  },
+  "pass_all": 9
+ },
+ "verdict": {
+  "complete": 11,
+  "primary_eff": 0.7,
+  "primary": 11,
+  "outcome": "NO CLEAR CHANGE"
+ }
+}
